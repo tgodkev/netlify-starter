@@ -4,6 +4,8 @@ backend:
 media_folder: 'static/images'
 public_folder: '/images'
 
+local_backend: true;
+
 collections:
   - name: posts
     label: Blog Posts
