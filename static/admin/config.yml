@@ -1,0 +1,26 @@
+backend:
+  name: git-gateway
+  branch: main
+media_folder: 'static/images'
+public_folder: '/images'
+
+collections:
+  - name: posts
+    label: Blog Posts
+    folder: src/lib/posts
+    create: true
+    fields:
+      - name: title
+      - name: excerpt
+      - name: categories
+        required: false
+      - name: date
+      - name: author
+        required: false
+      - name: thumbnail
+        label: Cover Image
+        widget: image
+        choose_url: false
+        required: false
+      - name: body
+        widget: markdown
