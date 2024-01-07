@@ -4,8 +4,9 @@ backend:
 media_folder: 'static/images'
 public_folder: '/images'
 
-local_backend: true;
-
+local_backend:
+  url: http://localhost:5173
+  
 collections:
   - name: posts
     label: Blog Posts
