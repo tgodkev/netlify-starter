@@ -1,21 +1,23 @@
 import fs from 'fs';
 import path from 'path';
 
-export async function GET({request}) {
-    const postsDirectory = 'src/lib/posts';
-    const filenames = fs.readdirSync(postsDirectory);
-    const posts = filenames.map(filename => {
-        const filePath = path.join(postsDirectory, filename);
-        const fileContents = fs.readFileSync(filePath, 'utf8');
-        return JSON.parse(fileContents);
-    });
-    console.log(posts)
+const postsDirectory = 'src/lib/posts';
+function readJsonFile(filePath: string): object {
+    const fileContents = fs.readFileSync(filePath, 'utf8');
+    return JSON.parse(fileContents);
+}
 
-    return new Response(JSON.stringify(posts), {
+function createResponse(data: object): Response {
+    return new Response(JSON.stringify(data), {
         status: 200,
-        headers: { 'Content-Type': 'application/json' }
+        headers: {'Content-Type': 'application/json'}
     });
 }
 
+export async function GET({request}) {
+    const filenames = fs.readdirSync(postsDirectory);
+    const posts = filenames.map(filename => readJsonFile(path.join(postsDirectory, filename)));
+    return createResponse(posts);
+}
 
-export const prerender =  true;
+export const prerender = true;
