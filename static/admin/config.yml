@@ -4,9 +4,8 @@ backend:
 media_folder: 'static/images'
 public_folder: '/images'
 
-local_backend:
-  url: http://localhost:5173
-  
+local_backend: true
+
 collections:
   - name: posts
     label: Blog Posts
@@ -27,3 +26,7 @@ collections:
         required: false
       - name: body
         widget: markdown
+      - label: "Image Gallery"
+        name: "image_gallery"
+        widget: "list"
+        fields:
