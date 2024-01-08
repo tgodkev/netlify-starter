@@ -1,0 +1,12 @@
+{
+  "title": "test post",
+  "excerpt": "this is a test for post querying",
+  "slug": "test-2",
+  "date": "today",
+  "body": "wwerwer",
+  "image_gallery": [
+    {
+      "image": "/images/8672698_3964904.svg"
+    }
+  ]
+}
