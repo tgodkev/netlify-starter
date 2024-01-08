@@ -37,4 +37,4 @@ export async function GET({params}): Promise<Response> {
     });
 }
 
-export const prerender : boolean = true;
+export const prerender : boolean = false;
