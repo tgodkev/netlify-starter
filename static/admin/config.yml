@@ -30,3 +30,4 @@ collections:
         name: "image_gallery"
         widget: "list"
         fields:
+          - { label: "Image", name: "image", widget: "image" }
