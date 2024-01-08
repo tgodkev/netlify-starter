@@ -17,3 +17,5 @@ export async function load({ fetch, params }) {
         };
     }
 }
+
+export const prerender:boolean = true;
