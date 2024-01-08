@@ -16,8 +16,8 @@ collections:
     fields:
       - name: title
       - name: excerpt
-      - name: categories
-        required: false
+      - name: slug
+        required: true
       - name: date
       - name: author
         required: false
