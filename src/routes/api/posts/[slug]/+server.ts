@@ -37,5 +37,4 @@ export async function GET({params}): Promise<Response> {
     });
 }
 
-export const prerender : boolean = false;
-export const ssr = true;
+export const prerender : boolean = true;

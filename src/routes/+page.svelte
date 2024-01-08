@@ -4,7 +4,8 @@
     export let {posts} = data;
     $: ({posts} = data);
 
-    console.log(posts)
+    //TODO add shadcn so i have all my utils in one place
+    //TODO Create utils to fetch all posts and [slug] posts and remove api.
 </script>
 
 <div>

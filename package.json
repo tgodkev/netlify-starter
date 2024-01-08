@@ -26,7 +26,11 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"clsx": "^2.1.0",
+		"lucide-svelte": "^0.307.0",
 		"netlify-cli": "^17.11.1",
-		"netlify-cms": "^2.10.192"
+		"netlify-cms": "^2.10.192",
+		"tailwind-merge": "^2.2.0",
+		"tailwind-variants": "^0.1.20"
 	}
 }
