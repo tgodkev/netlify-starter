@@ -11,6 +11,8 @@ collections:
     label: Blog Posts
     folder: src/lib/posts
     create: true
+    extension: "json"
+    format: "json"
     fields:
       - name: title
       - name: excerpt
