@@ -33,3 +33,12 @@ collections:
         widget: "list"
         fields:
           - { label: "Image", name: "image", widget: "image" }
+  - name: homepage
+    label: Home Page Data
+    folder: src/lib/homeData
+    create: false
+    extension: "json"
+    format: "json"
+    fields:
+      - name: Title
+      - name: Sub Title
