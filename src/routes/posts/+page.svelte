@@ -4,7 +4,7 @@
     export let {posts} = data;
     $: ({posts} = data);
 
-    console.log(posts)
+
 </script>
 
 <div>

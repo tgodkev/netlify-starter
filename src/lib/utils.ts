@@ -2,6 +2,8 @@ import { type ClassValue, clsx } from "clsx";
 import { twMerge } from "tailwind-merge";
 import { cubicOut } from "svelte/easing";
 import type { TransitionConfig } from "svelte/transition";
+import fs from 'fs';
+import path from 'path';
 
 export function cn(...inputs: ClassValue[]) {
     return twMerge(clsx(inputs));
@@ -59,4 +61,29 @@ export const flyAndScale = (
         },
         easing: cubicOut
     };
+};
+
+export const getAll = (dir: string) =>{
+    let itemDirectory: string = `src/lib/${dir}`;
+    const files = fs.readdirSync(itemDirectory);
+    const items = files.map((file) => {
+            const filePath = path.join(itemDirectory, file);
+            const fileContent = fs.readFileSync(filePath, "utf-8");
+            return JSON.parse(fileContent);
+        });
+        return items;
+}
+
+export const getItemById = (slug: string, dir: string) => {
+    const directory = `src/lib/${dir}`;
+    const indexFile = `${directory}Index.json`;
+    const index = JSON.parse(fs.readFileSync(indexFile, 'utf-8'));
+    const filename = index[slug];
+
+    if (!filename) {
+        return null; // or handle as appropriate
+    }
+    const filePath = path.join(directory, filename);
+    const fileContent = fs.readFileSync(filePath, 'utf-8');
+    return JSON.parse(fileContent);
 };

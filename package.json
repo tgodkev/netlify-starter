@@ -3,12 +3,14 @@
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
+		"generate-index": "node scripts/generatePostIndex.js",
+		"build": "pnpm run generate-index && vite build",
 		"dev": "vite dev",
-		"build": "vite build",
 		"preview": "vite preview",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
-	},
+	}
+,
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^3.1.0",
 		"@sveltejs/adapter-static": "^3.0.1",

@@ -1,21 +1,17 @@
-export async function load({ fetch, params }) {
-    let slug = params.slug
-    try {
-        const res = await fetch(`/api/posts/${slug}`);
-        if (!res.ok) {
-            throw new Error(`Error loading posts: ${res.statusText}`);
-        }
-        const posts = await res.json();
+// src/routes/blog/[slug]/+page.server.ts
+import { getItemById } from '$lib/utils';
 
+export async function load({ params }) {
+    const post = getItemById(params.slug, "posts");
+
+    if (!post) {
         return {
-            posts
-        };
-    } catch (error) {
-        console.error(error);
-        return {
-            posts: []  // Handle the error as needed
+            status: 404,
+            error: new Error('Post not found')
         };
     }
-}
 
-export const prerender:boolean = true;
+    return {
+        post
+    };
+}

@@ -1,18 +1,15 @@
-export async function load({ fetch }) {
-    try {
-        const res = await fetch('/api/posts');
-        if (!res.ok) {
-            throw new Error(`Error loading posts: ${res.statusText}`);
-        }
-        const posts = await res.json();
+import { getAll } from '$lib/utils';
 
-        return {
-         posts
-        };
+export async function load() {
+    try {
+        const posts = getAll('posts');
+       return {
+           posts
+       }
     } catch (error) {
-        console.error(error);
+        console.error('Error fetching posts:', error);
         return {
-            posts: []  // Handle the error as needed
+            props: { posts: [] }  // Handle the error as needed
         };
     }
 }

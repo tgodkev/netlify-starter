@@ -4,16 +4,20 @@ backend:
 media_folder: 'static/images'
 public_folder: '/images'
 
+local_backend: true
+
 collections:
   - name: posts
     label: Blog Posts
     folder: src/lib/posts
     create: true
+    extension: "json"
+    format: "json"
     fields:
       - name: title
       - name: excerpt
-      - name: categories
-        required: false
+      - name: slug
+        required: true
       - name: date
       - name: author
         required: false
@@ -24,3 +28,8 @@ collections:
         required: false
       - name: body
         widget: markdown
+      - label: "Image Gallery"
+        name: "image_gallery"
+        widget: "list"
+        fields:
+          - { label: "Image", name: "image", widget: "image" }
