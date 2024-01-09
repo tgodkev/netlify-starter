@@ -36,7 +36,7 @@ collections:
   - name: homepage
     label: Home Page Data
     folder: src/lib/homeData
-    create: false
+    create: true
     extension: "json"
     format: "json"
     fields:
