@@ -40,5 +40,15 @@ collections:
     extension: "json"
     format: "json"
     fields:
-      - name: Title
+      - name: Page Title
       - name: Sub Title
+
+  - name: About
+    label: About Page Data
+    folder: src/lib/aboutData
+    create: true
+    extension: "json"
+    format: "json"
+    fields:
+      - name: Page Title
+      - {label: Copy, name: copy, widget: text}
