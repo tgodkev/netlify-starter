@@ -61,6 +61,6 @@ collections:
     label: "About Page Data"
     file: "src/lib/cms/aboutData.json"
     fields:
-      - {label: "Title", name: "Title" widget: "string"}
+      - {label: "Title", name: "Title", widget: "string"}
       - {label: "Content", name: "Content", widget: "markdown"}
       - {label: "Hero Image", name: "Hero Image", widget:"image"} 
