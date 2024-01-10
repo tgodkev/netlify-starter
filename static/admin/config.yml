@@ -34,32 +34,6 @@ collections:
         fields:
           - { label: "Image", name: "image", widget: "image" }
 
-  - name: homepage
-    label: Home Page Data
-    folder: src/lib/homeData
-    create: true
-    extension: "json"
-    format: "json"
-    fields:
-      - name: Page Title
-      - name: Sub Title
-
-  - name: About Page Data
-    label: About Page Data
-    files:
-      - name: about.json
-        label: About Page Data
-        file: src/lib/aboutData/about.json
-        format: "json"
-        fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Copy, name: copy, widget: text}
-          - label: Images
-            name: images
-            widget: list
-            fields:
-              - {label: Images, name: images, widget: image} {label: Images, name: images, widget: image}
-
   - name: "settings"
     label: "Settings"
     extension: json
@@ -67,9 +41,22 @@ collections:
     files:
         - name: "navigation"
           label: "Navigation"
-          file: "src/lib/navigation.json"
+          file: "src/lib/cms/navigation.json"
           fields:
             - { label: "Navigation Links", name: "links", widget: "list", fields: [
               { label: "Title", name: "title", widget: "string" },
               { label: "URL", name: "url", widget: "string" }
             ] }
+
+  - name: Home Page Data
+    label: Home Page Data
+    extension: json
+    format: json
+    files:
+      name: Page Content
+      label: Page Content
+      file: src/lib/cms/homeData
+      fields:
+        - {label: Title, name: Title, widget: string}
+        - {label: Content, name: Content, widget: String}
+        - {label: Hero Image, name: Hero Image, widget: image}
