@@ -7,16 +7,17 @@
 
 </script>
 
-<div>
-    <h2>Hello</h2>
 
-    {#if posts}
-        <div  class="grid grid-cols-2">
+<div> 
+
+<h2>Hello</h2> 
+{#if posts} 
+<div  class="grid grid-cols-2">
             {#each posts as post }
                 {@const {title, slug, excerpt, body, image_gallery} = post}
                 <a href="/posts/{slug}">
-                    <h2 class='text-2xl'>{title}</h2>
-                    <p class="text-red-500">{excerpt}</p>
+                    <h2>{title}</h2>
+                    <p>{excerpt}</p>
                     <p>{body}</p>
                 </a>
             {/each}
