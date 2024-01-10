@@ -59,11 +59,14 @@ collections:
 
   - name: "About Page Data"
     label: "About Page Data"
-    files: "src/lib/cms/aboutData.json"
-    fields:
-      - {label: "Title", name: "Title", widget: "string"}
-      - {label: "Content", name: "Content", widget: "markdown"}
-      - {label: "Hero Image", name: "Hero Image", widget:"image"}
+    files: 
+      - name: "Page Data"
+        label: "page Data"
+        files: "src/lib/cms/aboutData.json"
+        fields:
+          - {label: "Title", name: "Title", widget: "string"}
+          - {label: "Content", name: "Content", widget: "markdown"}
+          - {label: "Hero Image", name: "Hero Image", widget:"image"}
 
 
 
