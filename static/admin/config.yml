@@ -56,3 +56,11 @@ collections:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Content", name: "content", widget: "markdown" } # Changed to 'markdown' for body content
           - { label: "Hero Image", name: "heroImage", widget: "image" } # Field names typically don't have spaces
+
+  - name: "About Page Data"
+    label: "About Page Data"
+    file: "src/lib/cms/aboutData.json"
+    fields:
+      - {label: "Title", name: "Title" widget: "string"}
+      - {label: "Content", name: "Content", widget: "markdown"}
+      - {label: "Hero Image", name: "Hero Image", widget:"image"} 
