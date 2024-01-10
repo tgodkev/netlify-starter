@@ -39,7 +39,7 @@ collections:
     files:
       - name: "navigation"
         label: "Navigation"
-        files: "src/lib/cms/navigation.json"
+        file: "src/lib/cms/navigation.json"
         fields:
           - { label: "Navigation Links", name: "links", widget: "list", fields: [
             { label: "Title", name: "title", widget: "string" },
@@ -51,7 +51,7 @@ collections:
     files:
       - name: "Page Content"
         label: "Page Content"
-        files: "src/lib/cms/homeData.json"
+        file: "src/lib/cms/homeData.json"
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Content", name: "content", widget: "markdown" } # Changed to 'markdown' for body content
@@ -62,7 +62,7 @@ collections:
     files: 
       - name: "Page Data"
         label: "page Data"
-        files: "src/lib/cms/aboutData.json"
+        file: "src/lib/cms/aboutData.json"
         fields:
           - {label: "Title", name: "Title", widget: "string"}
           - {label: "Content", name: "Content", widget: "markdown"}
