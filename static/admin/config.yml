@@ -52,4 +52,8 @@ collections:
     fields:
       - {label: Title, name: title, widget: string}
       - {label: Copy, name: copy, widget: text}
-      - {label: images, name: images, widget: list, fields: {label: Image, name: Image, widget: image} }
+      - label: Images
+        name: images
+        widget: list
+        fields:
+          - {label: Images, name: images, widget: image}
