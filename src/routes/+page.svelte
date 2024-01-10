@@ -15,8 +15,8 @@
             {#each posts as post }
                 {@const {title, slug, excerpt, body, image_gallery} = post}
                 <a href="/posts/{slug}">
-                    <h2>{title}</h2>
-                    <p>{excerpt}</p>
+                    <h2 class='text-2xl'>{title}</h2>
+                    <p class="text-red-500">{excerpt}</p>
                     <p>{body}</p>
                 </a>
             {/each}
