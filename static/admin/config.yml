@@ -57,3 +57,17 @@ collections:
         widget: list
         fields:
           - {label: Images, name: images, widget: image}
+
+  - name: Menu
+    label: Menu
+    folder: src/lib/navigationData
+    create: true
+    extension: json
+    format: json
+    fields:
+      label: Nav Items
+      name: Nav Items
+      widget: list
+      fields:
+        - {label: Title, name: Title, widget: string}
+        - {label: Slug, name: Slug, widget: string}
