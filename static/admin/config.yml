@@ -50,5 +50,6 @@ collections:
     extension: "json"
     format: "json"
     fields:
-      - name: Page Title
+      - {label: Title, name: title, widget: string}
       - {label: Copy, name: copy, widget: text}
+      - {label: images, name: images, widget: list, fields: {label: Image, name: Image, widget: image} }
