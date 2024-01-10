@@ -33,6 +33,7 @@ collections:
         widget: "list"
         fields:
           - { label: "Image", name: "image", widget: "image" }
+
   - name: homepage
     label: Home Page Data
     folder: src/lib/homeData
@@ -43,20 +44,21 @@ collections:
       - name: Page Title
       - name: Sub Title
 
-  - name: About
+  - name: About Page Data
     label: About Page Data
-    folder: src/lib/aboutData
-    create: true
-    extension: "json"
-    format: "json"
-    fields:
-      - {label: Title, name: title, widget: string}
-      - {label: Copy, name: copy, widget: text}
-      - label: Images
-        name: images
-        widget: list
+    files:
+      - name: about.json
+        label: About Page Data
+        file: src/lib/aboutData/about.json
+        format: "json"
         fields:
-          - {label: Images, name: images, widget: image}
+          - {label: Title, name: title, widget: string}
+          - {label: Copy, name: copy, widget: text}
+          - label: Images
+            name: images
+            widget: list
+            fields:
+              - {label: Images, name: images, widget: image} {label: Images, name: images, widget: image}
 
   - name: "settings"
     label: "Settings"
