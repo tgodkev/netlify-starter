@@ -1,0 +1,12 @@
+{
+  "copy": "this\nis \nsome \ncontent",
+  "title": "About this template",
+  "images": [
+    {
+      "images": "/images/8672698_3964904.svg"
+    },
+    {
+      "images": "/images/15961277_282_arrow_set.jpg"
+    }
+  ]
+}
