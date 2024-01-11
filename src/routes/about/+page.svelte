@@ -8,3 +8,10 @@
 console.log(route, "this is the about route")
 </script>
 
+
+  {#if route}
+{@const {Title, Content} = route[0]}
+
+
+    <h2>{Title}</h2>
+  {/if}
