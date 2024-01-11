@@ -72,5 +72,5 @@ collections:
         name: "Page Data"
         fields:
           - {label: "Title", name: "title", widget: "string"}
-          - {label: "Content", name: "tontent", widget: "markdown"}
+          - {label: "Content", name: "content", widget: "markdown"}
           - {label: "Hero Image", name: "heroImage", widget: "image"}
