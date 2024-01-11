@@ -1,5 +1,5 @@
-
 import { getAll } from '$lib/utils';
+
 
 export async function load() {
     try {

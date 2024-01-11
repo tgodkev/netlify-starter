@@ -10,8 +10,8 @@ console.log(route, "this is the about route")
 
 
   {#if route}
-    {@const {Title, Content} = route[0]}
+    {@const {title, content, heroImage} = route[0]}
 
 
-    <h2>{Title}</h2>
+    <h2>{title}</h2>
   {/if}

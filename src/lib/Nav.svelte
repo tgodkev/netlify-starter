@@ -1,5 +1,4 @@
 <script lang='ts'>
-
 export let menu: any;
 
 
@@ -14,3 +13,5 @@ console.log(menu[0].links)
     {/each}
   </ul>
 </nav>
+
+
