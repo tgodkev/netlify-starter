@@ -1,5 +1,8 @@
 {
   "Title": "About Page Data",
   "Content": "some content",
-  "Hero Image": "/images/15961277_282_arrow_set.jpg"
+  "Hero Image": "/images/15961277_282_arrow_set.jpg",
+  "title": "About Page",
+  "tontent": "Some text",
+  "heroImage": "/images/8672698_3964904.svg"
 }
