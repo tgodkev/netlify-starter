@@ -3,4 +3,8 @@
 export let menu: Record<string, any>
 </script>
 
-<div> </div>
+<nav>
+  <ul>
+    <li>Items will go here</li>
+  </ul>
+</nav>
