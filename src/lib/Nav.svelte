@@ -1,8 +1,9 @@
 <script lang='ts'>
+import * as Sheet  from "$lib/components/ui/sheet"  
 export let menu: any;
 
 
-console.log(menu[0].links)
+
 </script>
 
 <nav>

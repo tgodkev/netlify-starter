@@ -5,7 +5,7 @@
     export let {route} = data;
     $: ({route} = data);
 
-console.log(route, "this is the about route")
+
 </script>
 
 
@@ -14,4 +14,6 @@ console.log(route, "this is the about route")
 
 
     <h2>{title}</h2>
+      <p>{content}</p>
+      <img src={heroImage} alt="A guy holding code">
   {/if}
