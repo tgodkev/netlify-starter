@@ -9,9 +9,8 @@ import { getAll } from '$lib/utils';
 
 export async function load() {
     try {
-        const menu = getAll('cms/navigation.json');
+        const menu = getAll('cms/settings');
 
-       console.log(menu, "this is the menu object");
        return {
            menu
        }
