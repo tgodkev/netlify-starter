@@ -1,3 +1,4 @@
+
 backend:
   name: git-gateway
   branch: main
@@ -36,10 +37,11 @@ collections:
 
   - name: "settings"
     label: "Settings"
+    extension: "json"
+    format: "json"
     files:
-      - name: "navigation"
+      - file: "src/lib/cms/settings/navigation.json" # Adjust the file path as needed
         label: "Navigation"
-        folder: "src/lib/cms/navigation"
         fields:
           - { label: "Navigation Links", name: "links", widget: "list", fields: [
             { label: "Title", name: "title", widget: "string" },
@@ -48,25 +50,24 @@ collections:
 
   - name: "Home Page Data"
     label: "Home Page Data"
+    extension: "json"
+    format: "json"
     files:
-      - name: "Page Content"
+      - file: "src/lib/cms/home/homeData.json" # Adjust the file path as needed
         label: "Page Content"
-        folder: "src/lib/cms/homeData"
         fields:
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Content", name: "content", widget: "markdown" } # Changed to 'markdown' for body content
-          - { label: "Hero Image", name: "heroImage", widget: "image" } # Field names typically don't have spaces
+          - { label: "Content", name: "content", widget: "markdown" }
+          - { label: "Hero Image", name: "heroImage", widget: "image" }
 
   - name: "About Page Data"
     label: "About Page Data"
+    extension: "json"
+    format: "json"
     files: 
-      - name: "Page Data"
-        label: "page Data"
-        folder: "src/lib/cms/aboutData"
+      - file: "src/lib/cms/about/aboutData.json" # Adjust the file path as needed
+        label: "Page Data"
         fields:
           - {label: "Title", name: "Title", widget: "string"}
           - {label: "Content", name: "Content", widget: "markdown"}
           - {label: "Hero Image", name: "Hero Image", widget: "image"}
-
-
-
