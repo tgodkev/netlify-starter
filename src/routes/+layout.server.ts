@@ -17,7 +17,7 @@ export async function load() {
     } catch (error) {
         console.error('Error fetching posts:', error);
         return {
-            props: { menu: [] }  // Handle the error as needed
+         menu: []   // Handle the error as needed
         };
     }
 }

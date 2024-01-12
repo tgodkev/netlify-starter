@@ -13,7 +13,8 @@
     {@const {title, content, heroImage} = route[0]}
 
 
-    <h2>{title}</h2>
+
+    <h3>{title}</h3>
       <p>{content}</p>
       <img src={heroImage} alt="A guy holding code">
   {/if}
