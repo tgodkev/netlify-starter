@@ -24,7 +24,7 @@
 
     --secondary: 60 4.8% 95.9%;
     --secondary-foreground: 24 9.8% 10%;
-    
+
     --accent: 60 4.8% 95.9%;
     --accent-foreground: 24 9.8% 10%;
 
@@ -75,5 +75,20 @@
   body {
     @apply bg-background text-foreground;
   }
-}
 
+  article h1 {
+    @apply md:text-3xl text-xl font-bold;
+  }
+
+  article h2 {
+    @apply md:text-2xl text-lg font-bold;
+  }
+
+  article h3 {
+    @apply md:text-xl text-base font-bold;
+  }
+
+  article p {
+    @apply md:text-lg text-base max-w-prose;
+  }
+}
