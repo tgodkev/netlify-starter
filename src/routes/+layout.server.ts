@@ -1,11 +1,8 @@
+import { getAll } from '$lib/utils';
 export const prerender = true;
 export const ssr = true;
 export const csr = true;
 
-
-
-  
-import { getAll } from '$lib/utils';
 
 export async function load() {
     try {
