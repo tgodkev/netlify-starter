@@ -12,8 +12,6 @@ to get the base of the project up and running as quickly as possible.
 
 ## Features
 
-- List the key features of the project here.
-
 1.  SvelteKit
 2.  TailwindCSS
 3.  Shadcn-svelte
