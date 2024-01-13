@@ -14,11 +14,10 @@
   });
 </script>
 
-<div>
+<div class="p-5 md:p-20">
   {#if post}
     {@const { title, body, image_gallery } = post}
     <div class="">
-      <h2>{title}</h2>
       <article>{@html htmlContent}</article>
     </div>
   {/if}

@@ -5,7 +5,6 @@
   $: ({ posts } = data);
 </script>
 
-│
 <div>
   <h1>Hello From The Netlify Starter!</h1>
 </div>
