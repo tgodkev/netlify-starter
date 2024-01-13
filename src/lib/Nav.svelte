@@ -3,8 +3,6 @@
   import { Menu } from "lucide-svelte";
   import { Button } from "$lib/components/ui/button";
   export let menu: any;
-
-  console.log(menu);
 </script>
 
 <nav>

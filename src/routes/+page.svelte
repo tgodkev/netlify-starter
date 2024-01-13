@@ -6,19 +6,6 @@
 </script>
 
 │
-
 <div>
-  <h2 class="text-2xl">Hello</h2>
-  {#if posts}
-    <div class="grid grid-cols-2">
-      {#each posts as post}
-        {@const { title, slug, excerpt, body, image_gallery } = post}
-        <a href="/posts/{slug}">
-          <h2>{title}</h2>
-          <p>{excerpt}</p>
-          <p>{body}</p>
-        </a>
-      {/each}
-    </div>
-  {/if}
+  <h1>Hello From The Netlify Starter!</h1>
 </div>

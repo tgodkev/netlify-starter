@@ -7,8 +7,9 @@
 
 {#if route}
   {@const { title, content, heroImage } = route[0]}
-
-  <h3>{title}</h3>
-  <p>{content}</p>
-  <img src={heroImage} alt="A guy holding code" />
+  <section>
+    <h3>{title}</h3>
+    <p>{content}</p>
+    <img src={heroImage} alt="A guy holding code" />
+  </section>
 {/if}
