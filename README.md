@@ -13,10 +13,11 @@ to get the base of the project up and running as quickly as possible.
 ## Features
 
 - List the key features of the project here.
-  SvelteKit
-  TailwindCSS
-  Shadcn-svelte
-  Script To Generate slug array of blog posts
+
+1.  SvelteKit
+2.  TailwindCSS
+3.  Shadcn-svelte
+4.  Script To Generate slug array of blog posts
 
 ## Installation
 
