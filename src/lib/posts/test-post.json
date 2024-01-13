@@ -3,7 +3,7 @@
   "excerpt": "this is a test for post querying",
   "slug": "test-2",
   "date": "today",
-  "body": "wwerwer",
+  "body": "# Some Title\n\n`Some Code`\n\n> Some Quote\n\n* some\n* list\n\nsome[ link](www.google.com)",
   "image_gallery": [
     {
       "image": "/images/8672698_3964904.svg"
