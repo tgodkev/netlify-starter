@@ -1,1 +1,0 @@
-{"type":"data","nodes":[{"type":"data","data":[null],"uses":{}},{"type":"data","data":[{"post":1},{"title":2,"excerpt":3,"slug":4,"date":5,"body":6,"image_gallery":7},"test post","this is a test for post querying","test-2","today","wwerwer",[8],{"image":9},"/images/8672698_3964904.svg"],"uses":{"params":["slug"]}}]}
