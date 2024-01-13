@@ -16,8 +16,5 @@ export async function load() {
        }
     } catch (error) {
         console.error('Error fetching posts:', error);
-        return {
-         menu: []   // Handle the error as needed
-        };
     }
 }

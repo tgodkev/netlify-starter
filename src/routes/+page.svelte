@@ -8,7 +8,7 @@
 │
 
 <div>
-  <h2>Hello</h2>
+  <h2 class="text-2xl">Hello</h2>
   {#if posts}
     <div class="grid grid-cols-2">
       {#each posts as post}
