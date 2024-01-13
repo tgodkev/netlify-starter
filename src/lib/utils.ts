@@ -4,6 +4,8 @@ import { cubicOut } from "svelte/easing";
 import type { TransitionConfig } from "svelte/transition";
 import fs from 'fs';
 import path from 'path';
+import { marked } from "marked";
+
 
 export function cn(...inputs: ClassValue[]) {
     return twMerge(clsx(inputs));
@@ -87,3 +89,8 @@ export const getItemById = (slug: string, dir: string) => {
     const fileContent = fs.readFileSync(filePath, 'utf-8');
     return JSON.parse(fileContent);
 };
+
+
+export function parseMarkdown(markdown: string) {
+    return marked.parse(markdown);
+}

@@ -1,21 +1,25 @@
 <script lang="ts">
-    import type { PageData } from './$types';
-    export let data: PageData;
-    export let {post} = data;
-    $: ({post} = data);
+  import type { PageData } from "./$types";
+  export let data: PageData;
+  import { onMount } from "svelte";
+  import { parseMarkdown } from "$lib/utils";
 
+  export let { post } = data;
+  $: ({ post } = data);
+  let htmlContent: string = "";
 
+  onMount(() => {
+    htmlContent = parseMarkdown(post.body);
+    console.log(htmlContent);
+  });
 </script>
 
 <div>
-    <h2>Hello</h2>
-
-    {#if post}
-        {@const {title, slug, excerpt, body, image_gallery} = post}
-        <div  class="grid grid-cols-2">
-                    <h2>{title}</h2>
-                    <p>{excerpt}</p>
-                    <p>{body}</p>
-        </div>
-    {/if}
+  {#if post}
+    {@const { title, body, image_gallery } = post}
+    <div class="">
+      <h2>{title}</h2>
+      <article>{@html htmlContent}</article>
+    </div>
+  {/if}
 </div>

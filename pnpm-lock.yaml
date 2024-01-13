@@ -10,6 +10,9 @@ dependencies:
   lucide-svelte:
     specifier: ^0.307.0
     version: 0.307.0(svelte@4.2.8)
+  marked:
+    specifier: ^11.1.1
+    version: 11.1.1
   netlify-cli:
     specifier: ^17.13.0
     version: 17.13.0(@types/node@20.10.8)
@@ -7907,6 +7910,12 @@ packages:
     resolution: {integrity: sha512-Ezda85ToJUBhM6WGaG6veasyym+Tbs3cMAw/ZhOPqXiYsr0jgocBV3j3nx+4lk47plLlIqjwuTm/ywVI+zjJ/A==}
     dependencies:
       repeat-string: 1.6.1
+    dev: false
+
+  /marked@11.1.1:
+    resolution: {integrity: sha512-EgxRjgK9axsQuUa/oKMx5DEY8oXpKJfk61rT5iY3aRlgU6QJtUcxU5OAymdhCvWvhYcd9FKmO5eQoX8m9VGJXg==}
+    engines: {node: '>= 18'}
+    hasBin: true
     dev: false
 
   /material-colors@1.2.6:
