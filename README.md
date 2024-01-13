@@ -13,9 +13,11 @@ to get the base of the project up and running as quickly as possible.
 ## Features
 
 1.  SvelteKit
-2.  TailwindCSS
-3.  Shadcn-svelte
-4.  Script To Generate slug array of blog posts
+2.  Typescript
+3.  TailwindCSS
+4.  Shadcn-svelte
+5.  Script To Generate slug array of blog posts
+6.  Marked to convert wysiwyg-> json -> html(Function located in utils.ts)
 
 ## Installation
 
